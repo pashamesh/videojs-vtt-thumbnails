@@ -151,7 +151,7 @@
       // `left` applies to the mouse position relative to the player so we need
       // to remove the progress control's left offset to know the mouse position
       // relative to the progress control
-      mouseTime = Math.floor((left - progressControl.el().offsetLeft) / progressControl.width() * duration);
+      mouseTime = Math.floor(left / progressControl.width() * duration);
 
       //Now check which of the cues applies
       var cnum = thumbTrack&&thumbTrack.cues.length;
